@@ -50,6 +50,7 @@ function WeatherWidget(){
     if (loadingWeather) return <div className="weather-card"><div className="loading">Loading weather...</div></div>
   if (errorWeather) return <div>Weather unavailable</div>
   if (!weather) return null
+  if (loadingCity) return <div className="weather-card"><div className="loading">Loading city...</div></div>
 
     const weatherInfo = descriptions[
         String(weather.weather) as keyof typeof descriptions
@@ -64,11 +65,12 @@ function WeatherWidget(){
 
   return (
     <div className="weather-card">
-      <h2>{weather.temp}°C</h2>
       {image && (
         <img src={image} alt={description} />
       )}
-      <p>{cityResult?.city}, {cityResult?.country}</p>
+      <h2>{weather.temp}°C</h2>
+      <div className="city">{cityResult?.city} </div>
+      <div className="country">{cityResult?.country}</div>
     </div>
   )
 
