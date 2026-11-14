@@ -41,12 +41,25 @@ function Hero(){
     return () => clearTimeout(id);
   }, [text, isDeleting, wordIndex]);
 
+    useEffect(() => {
+        const reveal = document.getElementById("follower");
+        if (!reveal) return;
+
+        const handleMouseMove = (e: MouseEvent) => {
+            reveal.style.setProperty("--x", e.pageX + "px");
+            reveal.style.setProperty("--y", e.pageY + "px");
+        };
+
+        document.addEventListener("mousemove", handleMouseMove);
+        return () => document.removeEventListener("mousemove", handleMouseMove);
+    }, []);
   
     
     return (
     <div className="bg">
       <div className="spotlight"></div>
       <div className="center-line"></div>
+      <div className="follower" id="follower"></div>
       <div className="wrapper">
         <div className="welcomeText">
             I'm <span className="name">Tian,</span>

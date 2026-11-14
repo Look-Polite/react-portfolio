@@ -65,7 +65,7 @@ button {
     font-weight: 650;
     font-size: 0.9rem;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    border: 1.5px solid white;
+    border: 0.5px solid rgba(255, 255, 255,0.4);
     transition-duration: 0.4s;
 }
 
@@ -75,11 +75,14 @@ button {
 }
 
 .Contact:hover{
-
+    background-color: rgba(128, 128, 128, 0.3);
 }
 
-.Projects {
-    
+
+
+.Projects:hover {
+    background-color: rgb(200, 200, 200);
+    border: 0.5px solid rgb(150, 150, 150);
 }
 
 .cursor { animation: blink 1s steps(1) infinite; }
@@ -103,3 +106,21 @@ button {
   background-color: black;
   transform: translateX(-50%);
 } */
+
+
+.follower {
+  position: absolute;
+  inset: 0;
+
+  --x: 50vw;
+  --y: 50vh;
+
+  background: radial-gradient(
+    250px circle at var(--x) var(--y),
+    rgba(253, 253, 253, 0.07),
+    rgba(255, 255, 255, 0.05) 40%,
+    transparent 80%
+  );
+
+  pointer-events: none;
+}
