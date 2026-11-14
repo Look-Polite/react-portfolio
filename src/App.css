@@ -6,9 +6,13 @@ html, body {
 .topnav {
   background-color: #333;
   overflow: hidden;
-      justify-content: center;
-    align-items: center;
-    height: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 52px;
+  position: fixed;
+  width: 100%;
+  user-select: none;
+  z-index: 9999;
 }
 
 .topnav a {

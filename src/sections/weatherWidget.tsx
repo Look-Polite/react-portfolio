@@ -1,7 +1,7 @@
-import { useWeather } from './useWeather'
+import { useWeather } from '../useWeather'
 import { useEffect, useState } from 'react'
-import descriptions from './descriptions.json'
-import {useCityName} from './useCityName'
+import descriptions from '../descriptions.json'
+import {useCityName} from '../useCityName'
 import './weatherWidget.css'
 
 
