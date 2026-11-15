@@ -12,6 +12,11 @@
     border-radius: 50px;
     overflow: hidden;
     object-fit: fill;
+    transition-duration: 0.2s;
+}
+
+.image:hover{
+    box-shadow: 0 0 50px 15px rgb(129, 163, 255,0.6);
 }
 
 .image img{

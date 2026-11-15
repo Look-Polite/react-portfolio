@@ -26,7 +26,7 @@ export default function App() {
         <div className="logoWrapper"><a href="#top" className="logo1"><img src="public/logo1.png" className="logo1"/></a></div>
         <WeatherWidget />
       </div>
-      
+      <section id="top"></section>
       <div>
         <Hero />
         <div className='splitter'></div>
