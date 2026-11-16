@@ -3,6 +3,7 @@ import  WeatherWidget  from './sections/weatherWidget'
 import "./App.css"
 import Hero from "./sections/hero"
 import About from "./sections/about"
+import Projects from "./sections/projects"
 export default function App() {
 
     useEffect(() => {
@@ -32,6 +33,8 @@ export default function App() {
         <div className='splitter'></div>
         <About />
         <div className='splitter'></div>
+        <section id="projects"></section>
+        <Projects />
         <br />
         <br />
         <br />
