@@ -14,7 +14,7 @@ function Projects(){
                             Grand Prix Form
                         </div>
                         <div className='projBody'>
-                            An interactive, dynamic form linked to a Monday.Com backend for my Capstone Project. Built with React and Firebase.
+                            An interactive, dynamic form connected to a Monday.Com backend. Built with React and Firebase.
                         </div>
                         <div className='techBox'>
                             <div className='techIcon'>React</div>
