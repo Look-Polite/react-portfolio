@@ -1,0 +1,50 @@
+.aboutWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1.7fr;
+    margin: 100px;
+    border: hidden;
+}
+
+.image{
+    background-color: blue;
+    z-index: 1;
+    border-radius: 50px;
+    overflow: hidden;
+    object-fit: fill;
+    transition-duration: 0.4s;
+}
+
+.image:hover{
+    box-shadow: 0 0 50px 15px rgb(129, 163, 255,0.6);
+    transform: scale(1.05);
+}
+
+.image img{
+    object-fit: fill;
+    width: 100%;
+    height: 100%    ;
+}
+
+.aboutContent{
+    margin: 20px;
+    margin-left: 100px;
+    color: white;
+    font-size: 2.7rem;
+    z-index: 1;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.sectionTitle{
+    position: relative;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;   
+    z-index: 10;
+    padding-top: 80px;
+    font-weight: 600;
+}
