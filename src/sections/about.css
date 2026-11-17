@@ -1,7 +1,6 @@
 .aboutWrapper{
     display: grid;
     grid-template-columns: 1fr 1.7fr;
-    height: 70vh;
     margin: 100px;
     border: hidden;
 }
@@ -12,7 +11,7 @@
     border-radius: 50px;
     overflow: hidden;
     object-fit: fill;
-    transition-duration: 0.2s;
+    transition-duration: 0.4s;
 }
 
 .image:hover{
@@ -33,4 +32,19 @@
     font-size: 2.7rem;
     z-index: 1;
     font-family: 'Inter', sans-serif;
+}
+
+
+.sectionTitle{
+    position: relative;
+    justify-content: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-family: 'Inter', sans-serif;   
+    z-index: 10;
+    padding-top: 80px;
+    font-weight: 600;
 }

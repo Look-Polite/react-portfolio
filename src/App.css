@@ -6,6 +6,7 @@ html, body {
   -ms-overflow-style: none !important;
   scroll-behavior: smooth;
   z-index: -9999;
+  position: relative;
 }
 
 html::-webkit-scrollbar,

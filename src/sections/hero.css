@@ -1,12 +1,14 @@
 .bg {
+    position: relative;
+    isolation: isolate;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: rgb(4, 1, 14);
+    /* background-color: rgb(4, 1, 14); */
     justify-content: center;
     align-items: center;
     --p: ;
-    z-index: -9999;
+    z-index: 0;
 }
 
 
@@ -15,18 +17,20 @@
     width: clamp(250px, 60vw, 800px);
     top: 50%;
     left: 50%;
-    width: 90vh;
-    height: 90vh;
+    width: 70vh;
+    height: 70vh;
     border-radius: 50%;
     background: radial-gradient(
         closest-side,
-        rgba(87, 118, 220, calc(0.304 + min(var(--p) * 3, 1) * 0.20)) 30%,
-        rgba(87, 118, 220, calc(0.15 + min(var(--p) * 3, 1) * 0.15)) 65%,
+        rgba(87, 118, 220, calc(0.304 + min(var(--p) * 3, 1) * 0.25)) 30%,
+        rgba(87, 118, 220, calc(0.15 + min(var(--p) * 3, 1) * 0.10)) 65%,
         rgba(87, 118, 220, 0) 100%
     );
     filter: blur(40px);
     transform: translate(-50%, -50%) scale(calc(1 + min(var(--p) * 3, 1) * 0.5));
     will-change: transform, opacity;
+    z-index: -1;
+    pointer-events: none;
 }
 
 
@@ -114,5 +118,3 @@ button {
   background-color: black;
   transform: translateX(-50%);
 } */
-
-
