@@ -5,9 +5,11 @@ import { useState } from "react";
 
 function Cats(){
     const images = [
-        { src: "placeholder.png", alt: "p1", caption:"p1" },
-        { src: "placeholder2.png", alt: "p2", caption:"p2" },
-        { src: "placeholder3.png", alt: "p3", caption:"p3" },
+        { src: "cats1.png", alt: "the cats", caption:"The cats!" },
+        { src: "cats2.png", alt: "crumpet on a chair", caption:"Crumpet on a Chair" },
+        { src: "cats3.png", alt: "crumpet in a box", caption:"Crumpet in a Box" },
+        { src: "cats4.png", alt: "cadbury", caption:"Cadbury :)" },
+        { src: "cats5.png", alt: "the cats on a table", caption:"CnC together on a table" },
     ];
 
     //handling for the image carousel

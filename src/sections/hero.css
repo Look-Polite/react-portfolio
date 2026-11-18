@@ -87,13 +87,13 @@ button {
 }
 
 .Contact:hover{
-    background-color: rgba(128, 128, 128, 0.3);
+    background-color: rgba(142, 151, 152, 0.3);
 }
 
 
 
 .Projects:hover {
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(133, 133, 133);
     border: 0.5px solid rgb(150, 150, 150);
 }
 

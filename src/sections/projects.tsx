@@ -31,7 +31,7 @@ function Projects(){
 
 
                 <div className='projBox'>
-                    <img className='projImg' src="placeholder.png" alt="Picture of Project" />
+                    <img className='projImg' src="portfolio.png" alt="Picture of Project" />
                     <div className='projtext'>
                         <div className='projTitle'>
                             Portfolio Website
