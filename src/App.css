@@ -74,5 +74,53 @@ body::-webkit-scrollbar,
 
 .splitter {
   height: 0.5px;
-  background-color: rgba(255, 255, 255,0.1);
+  display: block;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.2) 10%,
+    rgba(255, 255, 255, 0.2) 90%,
+    transparent
+  );
+  width: 100%;
+  margin: auto;
+}
+
+
+.footerWrapper{
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.footerLeft{
+  display: flex;
+  margin: 20px;
+  margin-left: 30px;
+  gap: 20px;
+}
+
+.footerRight{
+  display: flex;
+  margin: 20px;
+  margin-left: auto;
+  opacity: 0.6;
+  gap: 20px;
+  justify-content: flex-end;
+  font-family: 'Inter', sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9rem;
+}
+
+
+.footImg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.3;
+    transition-duration: 0.3s;
+}
+
+
+.footImg:hover {
+  opacity: 0.8;
 }

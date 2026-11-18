@@ -77,7 +77,7 @@ useEffect(() => {
         </div>
         <div className="buttonHolder">
             <a href="#projects"> <button className="Projects">Projects</button></a>
-            <a href="#contact"> <button className="Contact">Contact Me →</button></a>
+            <a href="mailto:timothyhang@gmail.com"> <button className="Contact">Contact Me →</button></a>
         </div>
       </div>
     </div>

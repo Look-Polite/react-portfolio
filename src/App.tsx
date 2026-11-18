@@ -34,15 +34,26 @@ export default function App() {
       <section id="top"></section>
       <div>
         <Hero />
-        <div className='splitter'></div>
+        
         <About />
-        <div className='splitter'></div>
         <section id="projects"></section>
         <Projects />
         <Skills />
         <Cats />
         <br />
-
+        <div className='footer'>
+          <div className='splitter'></div>
+          <div className='footerWrapper'>
+            <br />
+            <div className='footerLeft'>
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Look-Polite"><img className='footImg' src="git.png" /></a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tianxiang-hang/"><img className='footImg' src="linkedin.png" /></a>
+            </div>
+            <div className='footerRight'>
+              Designed, wireframed, and built from scratch by me!
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     </>

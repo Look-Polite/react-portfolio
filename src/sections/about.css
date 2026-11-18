@@ -1,8 +1,25 @@
 .aboutWrapper{
     display: grid;
-    grid-template-columns: 1fr 1.7fr;
+    grid-template-columns: 1fr 1fr;
     margin: 100px;
     border: hidden;
+    gap: 100px;
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1008px) {
+    .aboutWrapper {
+        grid-template-columns: 1fr;
+        margin: 20vw;
+        margin-bottom: 0px;
+        gap: 10px;
+    }
+    
+    .aboutContent{
+        margin-left: 0px;
+        margin: 20vw;
+        margin-bottom: 0px;
+    }
 }
 
 .image{
@@ -26,12 +43,18 @@
 }
 
 .aboutContent{
-    margin: 20px;
-    margin-left: 100px;
-    color: white;
-    font-size: 2.7rem;
-    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 80px;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.2rem;
     font-family: 'Inter', sans-serif;
+    z-index: 10;
+    gap: 30px;
+    justify-content: center;
 }
 
 
@@ -47,4 +70,9 @@
     z-index: 10;
     padding-top: 80px;
     font-weight: 600;
+}
+
+
+.Contact:hover .arrow {
+  transform: translate(3px, -3px);
 }
