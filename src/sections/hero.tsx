@@ -1,7 +1,7 @@
 import './hero.css'
 import { useEffect, useState, useRef } from "react";
 
-
+//typing vars here - pretty self explanatory
 const WORDS = ["developer", "student", "creator"];
 const TYPE_SPEED = 70;
 const DELETE_SPEED = 50;
@@ -12,8 +12,9 @@ function Hero(){
 
 const bgRef = useRef<HTMLDivElement>(null);
 
+//handles spotlight expansion when scrolling (--p gets passed to the css so it can do its thing)
 useEffect(() => {
-  const onScroll = () => {
+    const onScroll = () => {
     const el = bgRef.current;
     if (!el) return;
 
@@ -21,8 +22,8 @@ useEffect(() => {
     el.style.setProperty("--p", String(p));
   };
 
-  onScroll();
-  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll(); //makes stuff keep working on reload
+  window.addEventListener("scroll", onScroll, { passive: true }); 
   return () => window.removeEventListener("scroll", onScroll);
 }, []);
 

@@ -5,7 +5,7 @@ import Hero from "./sections/hero"
 import About from "./sections/about"
 import Projects from "./sections/projects"
 import Skills from "./sections/skills"
-
+import Cats from "./sections/cats"
 
 
 export default function App() {
@@ -40,15 +40,9 @@ export default function App() {
         <section id="projects"></section>
         <Projects />
         <Skills />
+        <Cats />
         <br />
-        <br />
-        <br />
-        <br />
-        <br /><br />
 
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       </div>
     </div>
     </>
